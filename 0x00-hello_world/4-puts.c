@@ -2,7 +2,8 @@
 
 /**
  * main - The entry point in the c program
- * return:  indicates successful termination of program
+ * Return:  indicates successful termination of program
+ *
  */
 
 int main(void)
