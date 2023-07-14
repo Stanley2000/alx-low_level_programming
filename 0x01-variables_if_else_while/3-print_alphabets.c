@@ -9,8 +9,8 @@ int main(void)
 {
 	char start = 'a';
 	char end = 'z';
-	char End = 'z';
-	char Start = 'a';
+	char End = 'Z';
+	char Start = 'A';
 
 	for (; start <= end; start++)
 	{
