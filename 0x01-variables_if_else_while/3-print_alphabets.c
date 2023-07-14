@@ -10,7 +10,7 @@ int main(void)
 	char start = 'a';
 	char end = 'z';
 	char End = 'z';
-	cher Start = 'a';
+	char Start = 'a';
 
 	for (; start <= end; start++)
 	{
