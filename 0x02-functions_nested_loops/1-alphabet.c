@@ -2,7 +2,7 @@
 
 /**
   * main - The entry of the point of the program
-  * Return: Shows successful termination of the program
+  * print_alphabet: a function that returns nothing
   */
 
 void print_alphabet(void) /*a function to print out alphabets in lower case*/
