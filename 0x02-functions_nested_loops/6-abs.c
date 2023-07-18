@@ -5,7 +5,7 @@
   * Return: shows successful termination of the function
   */
 
-int int_abs(int n)
+int _abs(int n)
 {
 	if (n >= 0)
 	{
