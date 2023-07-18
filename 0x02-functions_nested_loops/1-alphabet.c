@@ -1,17 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
   * main - The entry of the point of the program
   * Return: Shows successful termination of the program
   */
-
-void print_alphabet(void);
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void) /*a function to print out alphabets in lower case*/
 {
@@ -20,8 +12,8 @@ void print_alphabet(void) /*a function to print out alphabets in lower case*/
 
 	for (; start <= end; start++)
 	{
-		putchar(start);
+		_putchar(start);
 
 	}
-	putchar('\n');
+	_putchar('\n');
 }
