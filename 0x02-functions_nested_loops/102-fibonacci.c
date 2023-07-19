@@ -6,11 +6,12 @@
  */
 int main(void)
 {	long int a, b, next;
+	int c;
 
 	a = 1;
 	b = 2;
 
-	for (int c = 1; c <= 50; ++c)
+	for (c = 1; c <= 50; ++c)
 	{
 		if (c < 50)
 		{
