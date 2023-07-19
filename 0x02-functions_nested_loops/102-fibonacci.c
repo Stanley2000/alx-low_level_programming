@@ -23,6 +23,6 @@ int main(void)
 		next = a + b;
 		a = b;
 		b = next;
-		}
+	}
 		return (0);
 }
