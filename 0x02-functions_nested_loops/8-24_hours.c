@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
   * jack_bauer - a function that print out minutes of the day of jack Bauer
