@@ -5,7 +5,7 @@
   * @str: a pointer argument
   */
 
-voif _puts(char *str);
+void _puts(char *str);
 {
 	puts(str);
 }
