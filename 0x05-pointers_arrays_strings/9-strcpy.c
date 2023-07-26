@@ -7,21 +7,17 @@
  * Return: dest buffer
  */
 
-char *_strcpy(char *dest, char *src)
-{
-	int len, i;
 
-	len = 0;
-	while (src[len] != '\0')
-	{
-		len++;
-	}
+char *_strcpy(char *dest, char *src) {
+    char *dest_start = dest; // Store the starting address of the destination buffer
 
-	for (i = 0; i < len; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = '\0';
+    // Copy characters from src to dest until the null terminator is encountered
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
 
-	return (dest);
+    *dest = '\0'; // Add the null terminator to the destination buffer
+    return dest_start; // Return the starting address of the destination buffer
 }
