@@ -23,6 +23,7 @@ char *_strcpy(char *dest, char *src, int n);
 		dest[i] = '\0';
 		i++;
 	}
+	return (dest);
 
 
 }
