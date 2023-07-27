@@ -6,7 +6,7 @@
   * _strncpy - a function to copy a string
   * @dest: destination of the string to be copied
   * @src: the string to be copied
-  * @n: the space allocatate to destination
+  * @n: number of bytes to be copied
   * Return: returns pointer to the copied string
   */
 
@@ -29,4 +29,3 @@ char *_strncpy(char *dest, char *src, int n);
 
 
 }
-
