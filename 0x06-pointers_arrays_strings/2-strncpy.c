@@ -8,7 +8,7 @@
   * Return: returns pointer to the copied string
   */
 
-char *_strcpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
 {
 	int i = 0;
 
