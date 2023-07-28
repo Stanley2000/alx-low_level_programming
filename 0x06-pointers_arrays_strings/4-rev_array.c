@@ -2,7 +2,7 @@
 
 /**
   * reverse_array - a function that reverse an array
-  * @a: the array
+  * @a: the array to be reversed
   * @n: number of elements in the array
   */
 
@@ -13,7 +13,7 @@ void reverse_array(int *a, int n)
 	i = 0;
 	j = n - 1;
 
-	while (i < n / 2)
+	while (i < n)
 	{
 		b = a[i];
 		a[i] = a[j];
