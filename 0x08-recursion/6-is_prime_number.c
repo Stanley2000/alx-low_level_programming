@@ -28,5 +28,5 @@ int prime_checker(int n, int d)
 		return (1);
 	if (n % d == 0 && d > 0)
 		return (0);
-	return (prime_checker(n, n - 1));
+	return (prime_checker(n, d - 1));
 }
