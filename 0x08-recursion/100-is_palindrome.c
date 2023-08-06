@@ -12,7 +12,7 @@ int palindrome_checker(char *s, int x, int y);
 
 int is_palindrome(char *s)
 {
-	if (plindrome_checker(s, 0, len_string(s) - 1)
+	if (palindrome_checker(s, 0, len_string(s) - 1)
 		return (1);
 	else
 		return (0);
