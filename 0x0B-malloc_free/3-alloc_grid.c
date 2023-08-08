@@ -9,14 +9,32 @@
 
 int **allow_grid(int width, int height)
 {
-	int a, size;
+	int a, b;
 	int **p;
 
-	size = width * height;
-	p = (int *) malloc(sizeof(int) * size);
+	p = (int **) malloc(sizeof(int) * height);
 	if (p == NULL)
 		return (NULL);
-	for (a = 0; a < size; a++)
-		p[a]  = 0;
+	for (a = 0; a < height; a++)
+	{
+		p[a] = (int *) malloc(sizeof(int) * width);
+		if (p[a] == NULL)
+		{
+			for (b = 0; b < a; b++)
+			{
+				free(p[b]);
+			}
+			free(p);
+			return (NULL);
+		}
+	}
+	for (a = o; a < height; a++)
+	{
+		for (b = 0; b < width; b++)
+		{
+			p[a][b] = 0;
+		}
+	}
 	return (p);
+
 }
