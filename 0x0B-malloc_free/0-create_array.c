@@ -4,13 +4,15 @@
   * create_array - a function that create an char array of size n
   * @size: the size of the array
   * @c: the character to fill in the array
+  * @Return: a pointer to the memory address allocated
   */
 char *create_array(unsigned int size, char c)
 {
-	char a*;
-	if (size ==0)
-		return (NULL);
+	char *a;
 	unsigned int i;
+
+	if (size == 0)
+		return (NULL);
 
 	a = malloc(sizeof(*a) * size);
 
@@ -20,6 +22,6 @@ char *create_array(unsigned int size, char c)
 	}
 	if (a == 0)
 		return (NULL);
-	return (a);	
+	return (a);
 }
 
