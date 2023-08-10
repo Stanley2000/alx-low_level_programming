@@ -1,4 +1,4 @@
-iinclude "main.h"
+#include "main.h"
 /**
   * string_nconcat - a function that joins two strings
   * @s1: The destination string
