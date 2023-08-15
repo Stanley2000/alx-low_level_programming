@@ -47,7 +47,13 @@ char *_strcpy(char *dest, char *src)
 
 	return (dest);
 }
-
+/**
+  * new_dog - a function that initialize a new dog_t variable
+  * @name: name of the dog_t variable
+  * @age: age of the dog_t variable
+  * @owner: owner of the dog_t variable
+  * Return: a pointer to the initialized variable
+  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *p;
