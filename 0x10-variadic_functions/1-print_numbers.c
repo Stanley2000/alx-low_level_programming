@@ -1,11 +1,11 @@
-#include "variadic_function"
+#include "variadic_functions.h"
 
 /**
   * print_numbers - prints n numbers added as an arg to a function
   * @separator: a pointer to a character
   * @n: the number of int args int the function
   */
-
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list num;
