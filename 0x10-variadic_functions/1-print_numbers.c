@@ -6,18 +6,23 @@
   * @n: the number of int args int the function
   */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	size_t i;
+	unsigned int i;
+	va_list num;
 
-	va_list args;
-
-	va_start(args, n);
+	va_start(num, n);
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d%s", va_arg(args, int), separator);
+		if (!separator)
+			printf("%d", va_arg(num, int));
+		else if (separator && i == 0)
+			printf("%d", va_arg(num, int));
+		else
+			printf("%s%d", separator, va_arg(num, int));
 	}
-	printf("\n");
 
+	va_end(num);
+
+	printf("\n");
 }
