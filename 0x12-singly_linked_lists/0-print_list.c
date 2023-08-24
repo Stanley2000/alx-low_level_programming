@@ -8,9 +8,9 @@
 size_t print_list(const list_t *h)
 {
 	list_t *current = h;
-	int counter = 0;
+	size_t counter = 0;
 
-	while (current->next != NULL)
+	while (current != NULL)
 	{
 		if (current->str != NULL)
 		{
