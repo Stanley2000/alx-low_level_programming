@@ -6,14 +6,14 @@
   * Return: returns the decimal value or null if the function fails
   */
 
-unsigned int binary_to_uint(const char *b) {
+unsigned int binary_to_uint(const char *b)
+{
 	if (b == NULL)
 		return (0);
 
 	unsigned int result = 0;
-	unsigned int index= 0;
+	unsigned int power_of_two = 1;
 	int length = 0;
-	int i =0;
 
 	while (b[length] != '\0')
 	{
@@ -22,15 +22,11 @@ unsigned int binary_to_uint(const char *b) {
 		length++;
 	}
 
-	i = length - 1;
-	while (i >= 0)
+	for (int i = length - 1; i >= 0; i--)
 	{
 		if (b[i] == '1')
-		{
-			index = (length - i) - 1;
-			result += (1 << index);
-		}
-		i--;
+			result += power_of_two;
+		power_of_two *= 2;
 	}
 
 	return (result);
