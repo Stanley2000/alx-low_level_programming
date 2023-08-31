@@ -6,36 +6,32 @@
   * Return: returns the decimal value or null if the function fails
   */
 
-unsigned int binary_to_uint(const char *b)
-{
-
-	unsigned int result = 0;
-	unsigned int index = 0;
-	unsigned int len = 0;
-	unsigned int i = 0;
-
+unsigned int binary_to_uint(const char *b) {
 	if (b == NULL)
 		return (0);
 
-	while (b[len] != '\0')
-	{
-		if (b[len] != '0' && b[len] != '1')
-		{
-			return (0);
-		}
-		len++;
-	}
-	i = len - 1;
+	unsigned int result = 0;
+	unsigned int index= 0;
+	int length = 0;
+	int i =0;
 
+	while (b[length] != '\0')
+	{
+		if (b[length] != '0' && b[length] != '1')
+			return (0);
+		length++;
+	}
+
+	i = length - 1;
 	while (i >= 0)
 	{
 		if (b[i] == '1')
 		{
-			index = (len - i) - 1;
+			index = (length - i) - 1;
 			result += (1 << index);
-
 		}
 		i--;
 	}
+
 	return (result);
 }
