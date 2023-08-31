@@ -1,4 +1,4 @@
-iinclude "main.h"
+#include "main.h"
 
 /**
   * binary_to_uint - a function that converts a binary to decimal equivalent
